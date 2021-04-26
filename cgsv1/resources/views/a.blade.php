@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/oussama.css">
     <title>Document</title>
-    <link href="../css/oussama.css" rel="stylesheet">
 </head>
 <body>
-  
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, nesciunt!</p>
+    <h1>hello word</h1>
 </body>
 </html>
