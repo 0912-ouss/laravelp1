@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('oussama', function () {
     return view('oussama');
 });
+Route::get('a', function () {
+    return view('a');
+});
