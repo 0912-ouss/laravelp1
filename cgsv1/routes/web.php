@@ -16,9 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('oussama', function () {
-    return view('oussama');
-});
-Route::get('a', function () {
-    return view('a');
+Route::get('ajfature', function () {
+    return view('ajfature');
 });
