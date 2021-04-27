@@ -19,8 +19,8 @@ Route::get('/', function () {
 Route::get('ajfature', function () {
     return view('ajfature');
 });
-Route::get('getfacture', function () {
-    return view('getfacture');
-});
-Route::get('getallfacture',[facturecontroller::class,"getall"]);
+
+Route::get('getfacture', 'App\Http\Controllers\cfacture@getfacture');
+//Route::get('register', 'Api\RegisterController@register');
+
 
