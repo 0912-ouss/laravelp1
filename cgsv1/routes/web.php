@@ -22,5 +22,8 @@ Route::get('ajfature', function () {
 
 Route::get('getfacture', 'App\Http\Controllers\cfacture@getfacture');
 //Route::get('register', 'Api\RegisterController@register');
+Route::get('getfacture/{num}', 'App\Http\Controllers\cfacture@getone');
+Route::get('ajfact', 'App\Http\Controllers\cfacture@ajfact');
+
 
 
