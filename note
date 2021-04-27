@@ -1,2 +1,3 @@
 pour crrer nv projet laravel ::laravel new nameprojet
 pour lancer projet ::php artisan serve
+pour crrer route vers un contoller Route::get('register', 'App\Http\Controllers\cfacture@getfacture');
