@@ -1,3 +1,11 @@
 pour crrer nv projet laravel ::laravel new nameprojet
+/-----------------------
 pour lancer projet ::php artisan serve
+/------------
 pour crrer route vers un contoller Route::get('register', 'App\Http\Controllers\cfacture@getfacture');
+/----------------------------
+ajoutter sur u table bd
+
+DB::table('facture')
+->insert(["numF"=>$r['numf'],"objet"=>$r['objet'],"dateF"=>$r['date'],"client"=>$r['client'],"tauxTva"=>$r['tva']]);
+ return  redirect('ajfature');
