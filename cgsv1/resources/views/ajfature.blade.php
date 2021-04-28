@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-   <form method="GET">
+   <form method="GET" action="ajfact">
   
    <div>
      <span>numf</span>
