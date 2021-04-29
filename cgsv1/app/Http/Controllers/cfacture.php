@@ -10,10 +10,9 @@ class cfacture extends Controller
     //
     public function getfacture(){
      
-       // return DB::select('select * from facture');
-        return DB::table('facture')
-        //->count();
-        ->get();
+       $dt= DB::select('select * from facture'); 
+        return view("allfacture",["dt"=>$dt]); 
+
     }
     public function getone($num){
      
