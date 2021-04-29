@@ -2,6 +2,9 @@ pour crrer nv projet laravel ::laravel new nameprojet
 /-----------------------
 pour lancer projet ::php artisan serve
 /------------
+/-----
+pour crrer nv controller 
+php artisan make:controller name
 pour crrer route vers un contoller Route::get('register', 'App\Http\Controllers\cfacture@getfacture');
 /----------------------------
 ajoutter sur u table bd
