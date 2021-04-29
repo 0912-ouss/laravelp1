@@ -19,9 +19,7 @@ Route::get('/', function () {
 Route::get('ajfature', function () {
     return view('ajfature');
 });
-Route::get('allfacture', function () {
-    return view('allfacture');
-});
+Route::get('allfacture', 'App\Http\Controllers\cfacture@getfacture');
 
 
 Route::get('getfacture', 'App\Http\Controllers\cfacture@getfacture');
