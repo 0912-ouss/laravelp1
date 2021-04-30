@@ -29,32 +29,33 @@
         <div class="form-wrapper">
             <h1 class="form-title">update FACTURE num {{ $o->numF }}</h1>
 
-            <form method="GET" action="ajfact">
+            <form method="GET" action="save">
+                @csrf
                 <div class="form-group">
                     <label for="username">num facture</label>
-                    <input type="text" name="numf" id="username" class="w-100" autofocus value="">
+                    <input type="text" name="numf" id="username" class="w-100" autofocus value="{{ $o->numF }}">
                     <span class="check-icon"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="email">date</label>
-                    <input type="date"name="date" id="email" class="w-100" value="">
+                    <input type="date"name="date" id="email" class="w-100" value="{{ $o->dateF }}">
                     <span class="check-icon"></span>
                 </div>
 
                 <div class="form-group ">
                     <label for="password">client</label>
-                    <input type="text" name="client" id="password" class="w-100" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value="">
+                    <input type="text" name="client" id="password" class="w-100" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value="{{ $o->client }}">
                     <span class="check-icon"></span>
                 </div>
                 <div class="form-group">
                     <label for="username">tva</label>
-                    <input type="text" name="tva" id="username" class="w-100" autofocus value="" title="Must be longer than 4 characters">
+                    <input type="text" name="tva" id="username" class="w-100" autofocus value="{{ $o->tauxTva }}" title="Must be longer than 4 characters">
                     <span class="check-icon"></span>
                 </div>
                 <div class="form-group">
                     <label for="username">objet</label>
-                    <input type="text" name="objet" id="username" class="w-100" autofocus value="" title="Must be longer than 4 characters">
+                    <input type="text" name="objet" id="username" class="w-100" autofocus value="{{ $o->objet }}" title="Must be longer than 4 characters">
                     <span class="check-icon"></span>
                 </div>
 
@@ -64,7 +65,7 @@
                 </div>
             </form>
 
-            <small>Have an account? <a href="#">Click here</a></small>
+            
         </div>
         <!-- end form-wrapper -->
     </div>
