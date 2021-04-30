@@ -10,4 +10,6 @@ class facture extends Model
     use HasFactory;
     public $table="facture";
     public $primarykey="numF";
+    public $timestamps=false;
+    public $incrementing=false;
 }
