@@ -17,12 +17,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('ajfature', function () {
-    return view('ajfature');
+    return view('addfactures');
 });//
+Route::get('upfature', function () { return view('upfacture');});//
+   
+
 Route::get('allfacture', 'App\Http\Controllers\cfacture@getfacture');
 
 
 Route::get('getfacture/{num}', 'App\Http\Controllers\cfacture@getone');
+Route::get('deletefacture/{num}', 'App\Http\Controllers\cfacture@delete');
+Route::get('updatefacture/{num}', 'App\Http\Controllers\cfacture@update');
 
 Route::get('ajfact', 'App\Http\Controllers\cfacture@ajfact');
 Route::get('addfactures', function () {
