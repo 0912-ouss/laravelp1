@@ -22,7 +22,11 @@ Route::get('ajfature', function () {
 Route::get('allfacture', 'App\Http\Controllers\cfacture@getfacture');
 
 
-//Route::get('getfacture/{num}', 'App\Http\Controllers\cfacture@getone');
+Route::get('getfacture/{num}', 'App\Http\Controllers\cfacture@getone');
 
-   
+Route::get('ajfact', 'App\Http\Controllers\cfacture@ajfact');
+Route::get('addfactures', function () {
+    return view('addfactures');
+});
+
 
