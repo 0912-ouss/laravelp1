@@ -365,6 +365,9 @@ main .order #total {
     cursor: pointer;
     outline: none;
     box-shadow: -8px 5px 20px 0 rgb(21 21 62 / 30%);
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: none;
 }
 
 .btn:hover {
