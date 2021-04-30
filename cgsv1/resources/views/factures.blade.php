@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>factures </title>
     <link rel="stylesheet" href="css/produit.css">
-    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="css/forni.css">
 </head>
 
@@ -51,7 +51,8 @@
                 @foreach ($dt as $o )
                     <li>
                         <div id="p1" class="action">
-                            <span> <button><i class="far fa-times"></i></button></span>
+                           <a href="deletefacture/{{$o->numF  }}"> supp</a>
+                           <a href="updatefacture/{{$o->numF  }}"> update</a>
                         </div>
                         <p>{{ $o->numF }}</p>
                         <p>{{ $o->objet }}</p>
@@ -70,8 +71,9 @@
 
         </form>
         <form class="order">
-            <button class="btn">add Fornisseur</button>
-            <button class="btn">edit fornisseur</button>
+           
+            <a href="ajfature" class="btn"> ajouter facture</a>
+      
         </form>
 
     </main>
