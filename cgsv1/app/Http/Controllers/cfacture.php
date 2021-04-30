@@ -26,7 +26,7 @@ class cfacture extends Controller
         // return DB::select('select * from facture');
         DB::table('facture')
         ->insert(["numF"=>$r['numf'],"objet"=>$r['objet'],"dateF"=>$r['date'],"client"=>$r['client'],"tauxTva"=>$r['tva']]);
-         return  redirect('ajfature');
+         return  redirect('addfactures');
          
          
      }
