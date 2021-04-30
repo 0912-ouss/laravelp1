@@ -43,6 +43,20 @@ class cfacture extends Controller
         return view("upfacture",["o"=>$o]);
        
     }
+    public function save(Request $r){
+        $o=new facture();
+      //  $o=facture::where("numF",$r->numf);
+       // $o->objet=$r->objet;
+       // $o->dateF=$r->date;
+       // $o->client=$r->client;
+       // $o->tauxTva=$r->tva;
+       // $o->save();
+        
+            return $o;
+       // return  redirect('allfacture');
+       
+    }
+
 
 }
 
