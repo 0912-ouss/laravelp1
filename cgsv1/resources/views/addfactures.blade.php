@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign up</title>
-    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/login.css">
 </head>
 
@@ -44,7 +44,7 @@
 
                 <div class="form-group ">
                     <label for="password">client</label>
-                    <input type="text" name="password" id="password" class="w-100" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value="">
+                    <input type="text" name="client" id="password" class="w-100" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value="">
                     <span class="check-icon"></span>
                 </div>
                 <div class="form-group">
