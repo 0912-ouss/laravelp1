@@ -44,7 +44,7 @@ class cfacture extends Controller
        
     }
     public function save(Request $r){
-        $o=new facture();
+        //$o=new facture();
       //  $o=facture::where("numF",$r->numf);
        // $o->objet=$r->objet;
        // $o->dateF=$r->date;
@@ -52,10 +52,14 @@ class cfacture extends Controller
        // $o->tauxTva=$r->tva;
        // $o->save();
         
-            return $o;
+            return "oussama";
        // return  redirect('allfacture');
        
     }
+    public function s(){
+        return"oussama";
+    }
+
 
 
 }
