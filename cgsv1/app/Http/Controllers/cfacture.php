@@ -11,7 +11,7 @@ class cfacture extends Controller
     public function getfacture(){
      
        $dt= DB::select('select * from facture'); 
-        return view("allfacture",["dt"=>$dt]); 
+        return view("factures",["dt"=>$dt]); 
 
     }
     public function getone($num){
