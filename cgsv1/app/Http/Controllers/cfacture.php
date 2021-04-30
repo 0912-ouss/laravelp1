@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\facture;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -25,11 +26,24 @@ class cfacture extends Controller
      
         // return DB::select('select * from facture');
         DB::table('facture')
-        ->insert(["numF"=>$r['numf'],"objet"=>$r['objet'],"dateF"=>$r['date'],"client"=>$r['client'],"tauxTva"=>$r['tva']]);
-         return  redirect('addfactures');
+        ->insert(["numF"=>$r['numf'],"objet"=>$r['objet'],"dateF"=>$r['date'],"client"=>$r['client'],"tauxTva"=>$r['tva'],"prixHt"=>"0","tva"=>"0","prixTtc"=>"0"]);
+         return  redirect('allfacture');
          
          
      }
+     public function delete($num){
+         $f=facture::where("numF",$num);
+         if($f){
+             $f->delete();
+         }
+         return redirect("allfacture");
+     }
+     public function update($num){
+        $o=facture::where("numF",$num)->first();
+        return view("upfacture",["o"=>$o]);
+       
+    }
+
 }
 
 
