@@ -30,6 +30,7 @@
             <h1 class="form-title">ADD FACTURE</h1>
 
             <form method="GET" action="ajfact">
+                @csrf
                 <div class="form-group">
                     <label for="username">num facture</label>
                     <input type="text" name="numf" id="username" class="w-100" autofocus value="">
@@ -64,7 +65,7 @@
                 </div>
             </form>
 
-            <small>Have an account? <a href="#">Click here</a></small>
+            
         </div>
         <!-- end form-wrapper -->
     </div>
