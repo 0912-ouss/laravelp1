@@ -18,14 +18,11 @@ Route::get('/', function () {
 });
 Route::get('ajfature', function () {
     return view('ajfature');
-});
+});//
 Route::get('allfacture', 'App\Http\Controllers\cfacture@getfacture');
 
 
-Route::get('getfacture', 'App\Http\Controllers\cfacture@getfacture');
-//Route::get('register', 'Api\RegisterController@register');
-Route::get('getfacture/{num}', 'App\Http\Controllers\cfacture@getone');
-Route::get('ajfact', 'App\Http\Controllers\cfacture@ajfact');
+//Route::get('getfacture/{num}', 'App\Http\Controllers\cfacture@getone');
 
-
+   
 
