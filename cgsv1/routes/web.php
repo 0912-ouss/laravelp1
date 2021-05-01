@@ -34,7 +34,7 @@ Route::get('ajfact', 'App\Http\Controllers\cfacture@ajfact');
 Route::get('addfactures', function () {
     return view('addfactures');
 });
-Route::get('AjMod', function () {
+Route::get('AjMod/{num}', function () {
     return view('AjMod');
 });
 
@@ -49,7 +49,7 @@ Route::get('Detaillfact', function () {
     return view('Detaillfact');
 });
 
-Route::get('AjFact','App\Http\Controllers\facteurat@ajouter');
+Route::get('AjFact/{num}','App\Http\Controllers\facteurat@ajouter');
 Route::get('SuDFact/{num}','App\Http\Controllers\facteurat@supprimer');
 Route::get('UpDFact/{num}','App\Http\Controllers\facteurat@update');
 Route::get('Detaillfact','App\Http\Controllers\DFact@GetAll');
