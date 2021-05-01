@@ -33,9 +33,9 @@
             <form method="GET" action="save">
                 @php
                 if(isset($o)){
-                    
-                    $nume=$o->numF;
-                    $objet=$o->objet;
+                     $objet=$o->objet;
+                   
+                   $num= $o->numF;
                   $date=$o->dateF;
                  $client= $o->client;
                  $tva= $o->tauxTva;
@@ -44,8 +44,8 @@
               @endphp
                 @csrf
                 <div class="form-group">
-                    <label for="username">num facture</label>
-                    <input type="text" name="numf" id="username" class="w-100"  value="{{ $nume }}">
+                    <label for="username">num facture {{ $o->numF }} {{$num  }}</label>
+                    <input type="text" name="numf" id="username" class="w-100"  value="{{$o->numF}}">
                     <span class="check-icon"></span>
                 </div>
 
@@ -57,7 +57,7 @@
 
                 <div class="form-group ">
                     <label for="password">client</label>
-                    <input type="text" name="client" id="password" class="w-100" title="Must contain characters" value="{{ $client }}">
+                    <input type="text" name="client" id="password" class="w-100" title="" value="{{ $client }}">
                     <span class="check-icon"></span>
                 </div>
                 <div class="form-group">
