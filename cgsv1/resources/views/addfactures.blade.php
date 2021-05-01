@@ -33,29 +33,29 @@
                 @csrf
                 <div class="form-group">
                     <label for="username">num facture</label>
-                    <input type="text" name="numf" id="username" class="w-100" autofocus value="">
+                    <input type="text" name="numf" id="username" class="w-100" autofocus value="" required>
                     <span class="check-icon"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="email">date</label>
-                    <input type="date"name="date" id="email" class="w-100" value="">
+                    <input type="date"name="date" id="email" class="w-100" value=""  required>
                     <span class="check-icon"></span>
                 </div>
 
                 <div class="form-group ">
                     <label for="password">client</label>
-                    <input type="text" name="client" id="password" class="w-100" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value="">
+                    <input type="text" name="client" id="password" class="w-100" value=""  required>
                     <span class="check-icon"></span>
                 </div>
                 <div class="form-group">
                     <label for="username">tva</label>
-                    <input type="text" name="tva" id="username" class="w-100" autofocus value="" title="Must be longer than 4 characters">
+                    <input type="text" name="tva" id="username" class="w-100" autofocus value=""  required>
                     <span class="check-icon"></span>
                 </div>
                 <div class="form-group">
                     <label for="username">objet</label>
-                    <input type="text" name="objet" id="username" class="w-100" autofocus value="" title="Must be longer than 4 characters">
+                    <input type="text" name="objet" id="username" class="w-100" autofocus value=""  required>
                     <span class="check-icon"></span>
                 </div>
 
