@@ -16,6 +16,7 @@ class facteurat extends Controller
             return redirect("Detaillfact");
         
     }
+    
 
     public function supprimer($num)
     {
@@ -24,7 +25,7 @@ class facteurat extends Controller
         return redirect("Detaillfact");
     }
 
-    public function GetAll()
+    public function GetAll( )
     {
         $dt=DB::select("select * from d_facture");
         return view("Detaillfact",["dt"=>$dt]);
