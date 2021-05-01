@@ -201,4 +201,5 @@ main .forni ul li .p7 {
     cursor: pointer;
     outline: none;
 }
-main .forni ul li .action a{width: 30px; height: 30px;}
+main .forni ul li .action a{width: 30px; height: 30px; margin-right: 10px;
+color: #82ae46; text-decoration: none; text-transform: capitalize; font-size: 14px;}
