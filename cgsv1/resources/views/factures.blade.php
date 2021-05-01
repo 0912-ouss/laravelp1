@@ -51,8 +51,9 @@
                 @foreach ($dt as $o )
                     <li>
                         <div id="p1" class="action">
-                           <a href="deletefacture/{{$o->numF  }}"> supp</a>
-                           <a href="updatefacture/{{$o->numF  }}"> update</a>
+                           <a href="deletefacture/{{$o->numF  }}"> sup</a>
+                           <a href="updatefacture/{{$o->numF  }}"> up</a>
+                           <a href="AjMod/{{$o->numF  }}"> det</a>
                         </div>
                         <p>{{ $o->numF }}</p>
                         <p>{{ $o->objet }}</p>
